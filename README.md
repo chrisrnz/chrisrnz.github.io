@@ -1,10 +1,8 @@
 - [home](/)
 - [docs index](/docs)
-- [docs index](/docs/)
-- [welcomedocspost](/docs/2017-01-14-github-welcome/)
-- [welcomepostspost](_posts/2017-01-13-first-post/)
 - [posts index](_posts)
-- [posts index](_posts/)
+- [welcomedocspost](/docs/2017-01-14-github-welcome)
+- [welcomepostspost](_posts/2017-01-13-first-post)
 
 ## Welcome to GitHub Pages
 
