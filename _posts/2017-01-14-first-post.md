@@ -4,4 +4,4 @@ title: "First Post"
 date: 2017-01-14
 ---
 
-First post text.
+First post text.  layout = post
