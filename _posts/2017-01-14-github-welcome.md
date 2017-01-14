@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Github Welcome Text
 ---
 ## Welcome to GitHub Pages
