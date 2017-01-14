@@ -1,4 +1,4 @@
 theme: jekyll-theme-tactile
-title: Chris's notes
-description: So I don't forget.
-show_downloads: true
+title: Chris's Notepad
+description: Somewhere to write things so I don't forget.
+show_downloads: false
