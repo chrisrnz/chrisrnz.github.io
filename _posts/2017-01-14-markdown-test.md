@@ -15,10 +15,12 @@ date: 2017-01-14
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](https://avatars3.githubusercontent.com/u/6965555?v=3&s=40)
+[Link](url) and
+![Image](https://avatars1.githubusercontent.com/u/6965555?v=3&s=460)
 
 
 Markdown syntax hilighting
+
 ```markdown
 Syntax highlighted code block
 
@@ -39,6 +41,7 @@ Syntax highlighted code block
 
 
 bash syntax hilighting
+
 ```bash
 #!/bin/bash
 
@@ -51,6 +54,7 @@ fi
 
 
 nginx syntax hilighting
+
 ```nginx
 server {
     server_name   one.example.com  www.one.example.com;
