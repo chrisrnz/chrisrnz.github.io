@@ -3,26 +3,10 @@ layout: default
 title: "Markdown Test"
 date: 2017-01-14
 ---
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and
-![Image](https://avatars1.githubusercontent.com/u/6965555?v=3&s=460)
-
-
-Markdown syntax hilighting
+### Markdown syntax hilighting
 
 ```markdown
-Syntax highlighted code block
+Markdown Syntax highlighted code block
 
 # Header 1
 ## Header 2
@@ -39,8 +23,23 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+## Output
+# Header 1
+## Header 2
+### Header 3
 
-bash syntax hilighting
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+
+
+### bash syntax hilighting
 
 ```bash
 #!/bin/bash
@@ -53,7 +52,7 @@ fi
 ```
 
 
-nginx syntax hilighting
+### nginx syntax hilighting
 
 ```nginx
 server {
