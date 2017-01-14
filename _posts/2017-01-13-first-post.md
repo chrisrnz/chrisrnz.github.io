@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Github Welcome Text
+title: Github Welcome Text in _posts
 ---
 ## Welcome to GitHub Pages
 
