@@ -17,6 +17,7 @@ date: 2017-01-14
 
 [Link](url) and ![Image](https://avatars3.githubusercontent.com/u/6965555?v=3&s=40)
 
+
 Markdown syntax hilighting
 ```markdown
 Syntax highlighted code block
@@ -36,6 +37,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+
 bash syntax hilighting
 ```bash
 #!/bin/bash
@@ -46,6 +48,7 @@ then
  exit 2
 fi
 ```
+
 
 nginx syntax hilighting
 ```nginx
