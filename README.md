@@ -1,4 +1,4 @@
 ## Welcome to my GitHub Pages
 
-- [home](/)
+- [Home](/)
 - [Notes](/notes)
