@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "First Post"
+title: "Example Post"
 date: 2017-01-14
 ---
 
-First post text.  layout = post
+First example text.  layout = default
