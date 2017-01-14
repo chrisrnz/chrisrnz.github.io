@@ -1,8 +1,5 @@
-# First Post
-====
-    code
-
-
-
-
-.
+---
+layout: post
+title: Github Welcome Text
+---
+pastehere
