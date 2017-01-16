@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Check Point FAQ's"
-published: false
+published: true
 date: 2017-01-16
 ---
 
