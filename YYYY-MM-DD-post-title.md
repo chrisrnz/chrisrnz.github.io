@@ -5,16 +5,20 @@ published: false
 date: YYYY-MM-DD
 ---
 
-## Markdown syntax
+# Markdown syntax
 
 ```markdown
 # Header 1
+
 ## Header 2
+
 ### Header 3
 ```
 
 # Header 1
+
 ## Header 2
+
 ### Header 3
 
 ```markdown
@@ -38,13 +42,12 @@ date: YYYY-MM-DD
 **Bold** and _Italic_ and `Code` text
 
 ```markdown
-[Link](url) and ![Image](src)
+[Link](../assets/images/octocat-icon.png) and Image ![Image](../assets/images/octocat-icon.png)
 ```
 
-[Link](url) and ![Image](src)
+[Link](../assets/images/octocat-icon.png) and Image ![Image](../assets/images/octocat-icon.png)
 
-
-### bash syntax hilighting
+## bash syntax hilighting
 
 ```bash
 #!/bin/bash
@@ -56,7 +59,7 @@ then
 fi
 ```
 
-### nginx syntax hilighting
+## nginx syntax hilighting
 
 ```nginx
 server {
