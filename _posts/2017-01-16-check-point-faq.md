@@ -1,6 +1,6 @@
 ---
 title: "Check Point FAQ's"
-published: true
+published: false
 ---
 
 # Markdown syntax
