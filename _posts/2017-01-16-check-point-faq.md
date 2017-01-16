@@ -4,7 +4,6 @@ title: "Check Point FAQ's"
 
 ## Markdown syntax
 
-
 ```markdown
 # Header 1
 
@@ -12,6 +11,7 @@ title: "Check Point FAQ's"
 
 ### Header 3
 ```
+
 # Header 1
 
 ## Header 2
@@ -39,10 +39,10 @@ title: "Check Point FAQ's"
 **Bold** and _Italic_ and `Code` text
 
 ```markdown
-[Link](url) and ![Image](src)
+[Link](https://chrisrnz.github.io/assets/images/octocat-icon.png) and ![Image](https://chrisrnz.github.io/assets/images/octocat-icon.png)
 ```
 
-[Link](url) and ![Image](src)
+[Link](https://chrisrnz.github.io/assets/images/octocat-icon.png) and ![Image](https://chrisrnz.github.io/assets/images/octocat-icon.png)
 
 ### bash syntax hilighting
 
