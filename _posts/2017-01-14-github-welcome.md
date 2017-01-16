@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Github Welcome Text
+title: Github Pages Welcome Text
+published: true
 ---
 ## Welcome to GitHub Pages
 
