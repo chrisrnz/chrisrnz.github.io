@@ -1,20 +1,21 @@
 ---
-layout: default
 title: "Check Point FAQ's"
-published: true
-date: 2017-01-16
 ---
 
 ## Markdown syntax
 
+
 ```markdown
 # Header 1
+
 ## Header 2
+
 ### Header 3
 ```
-
 # Header 1
+
 ## Header 2
+
 ### Header 3
 
 ```markdown
@@ -42,7 +43,6 @@ date: 2017-01-16
 ```
 
 [Link](url) and ![Image](src)
-
 
 ### bash syntax hilighting
 
