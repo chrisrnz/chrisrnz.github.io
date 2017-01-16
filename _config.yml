@@ -2,3 +2,11 @@ theme: jekyll-theme-tactile
 title: Chris's Notepad
 description: Somewhere to write things so I don't forget.
 show_downloads: false
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "default"
+      author: "Chris Russell"
