@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Article Title"
+published: false
 date: YYYY-MM-DD
 ---
 
