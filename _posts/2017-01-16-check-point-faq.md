@@ -1,5 +1,6 @@
 ---
 title: "Check Point FAQ's"
+published: true
 ---
 
 # Markdown syntax
@@ -39,10 +40,10 @@ title: "Check Point FAQ's"
 **Bold** and _Italic_ and `Code` text
 
 ```markdown
-[Link](https://chrisrnz.github.io/assets/images/octocat-icon.png) and ![Image](/assets/images/octocat-icon.png)
+[Link](/assets/images/octocat-icon.png) and image ![Image](/assets/images/octocat-icon.png)
 ```
 
-[Link](https://chrisrnz.github.io/assets/images/octocat-icon.png) and ![Image](/assets/images/octocat-icon.png)
+[Link](/assets/images/octocat-icon.png) and image ![Image](/assets/images/octocat-icon.png)
 
 ## bash syntax hilighting
 
