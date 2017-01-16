@@ -1,8 +1,6 @@
 ---
-layout: default
-title: "Useful bash one liners"
+title: "Useful bash one-liners"
 published: true
-date: 2017-01-16
 ---
 
 # Some useful bash one liners
