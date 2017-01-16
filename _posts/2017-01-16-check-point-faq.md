@@ -2,7 +2,7 @@
 title: "Check Point FAQ's"
 ---
 
-## Markdown syntax
+# Markdown syntax
 
 ```markdown
 # Header 1
@@ -39,12 +39,12 @@ title: "Check Point FAQ's"
 **Bold** and _Italic_ and `Code` text
 
 ```markdown
-[Link](https://chrisrnz.github.io/assets/images/octocat-icon.png) and ![Image](https://chrisrnz.github.io/assets/images/octocat-icon.png)
+[Link](../assets/images/octocat-icon.png) and ![Image](../assets/images/octocat-icon.png)
 ```
 
-[Link](https://chrisrnz.github.io/assets/images/octocat-icon.png) and ![Image](https://chrisrnz.github.io/assets/images/octocat-icon.png)
+[Link](../assets/images/octocat-icon.png) and ![Image](../assets/images/octocat-icon.png)
 
-### bash syntax hilighting
+## bash syntax hilighting
 
 ```bash
 #!/bin/bash
@@ -56,7 +56,7 @@ then
 fi
 ```
 
-### nginx syntax hilighting
+## nginx syntax hilighting
 
 ```nginx
 server {
