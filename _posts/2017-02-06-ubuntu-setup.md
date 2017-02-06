@@ -15,7 +15,7 @@ echo 'if [ -f /usr/bin/keychain ]; then eval `keychain --eval --agents ssh id_ds
 ssh-keygen -b 4096 -t rsa
 ```
 
-## Get root
+### Get root
 ```bash
 sudo -i
 ```
@@ -118,6 +118,16 @@ apt install mutt
 
 `Internet with smarthost:
 accept defaults #(assumes smtp.mydomain is set correctly.)`
+
+```bash 
+rvim /etc/aliases
+```
+
+`root: yourname`
+
+```bash 
+postaliases
+```
 
 ### Maintenance
 ```bash
