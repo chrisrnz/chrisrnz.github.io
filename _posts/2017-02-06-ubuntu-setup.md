@@ -21,7 +21,6 @@ sudo -i
 ```
 
 ### Update packages & tidy.
-
 ```bash
 apt update && apt dist-upgrade && apt autoremove && apt autoclean && apt clean
 ```
@@ -65,8 +64,9 @@ apt install ntp
 rvim /etc/ntp.conf && service ntp restart
 ```
 
-`# Specify one or more NTP servers.
-server time.hardknocks.school.nz iburst`
+```# Specify one or more NTP servers.
+server time.hardknocks.school.nz iburst
+```
 
 ```bash
 ntpq --peers
@@ -78,23 +78,26 @@ apt install snmpd
 rvim /etc/snmp/snmpd.conf
 ```
 
-`agentAddress udp:161,udp6:[::1]:161
+```
+agentAddress udp:161,udp6:[::1]:161
 rocommunity ****** localhost
 rocommunity ****** 192.168.0.1/32
 rocommunity public 192.168.0.0/24 -V systemonly
 #rocommunity6 ****** 2400:ee80:2000:0500::/56 -V systemonly
 syslocation Wellington, NZ
 syscontact Operations <******@******>
-
 # comment out;
 line 151: Warning: Unknown token: defaultMonitors.
-line 153: Warning: Unknown token: linkUpDownNotifications.`
+line 153: Warning: Unknown token: linkUpDownNotifications.
+```
 
 ```bash
 rvim /etc/default/snmpd
 ```
 
-`SNMPDOPTS='-LS0-5d -Lf /dev/null -u snmp -g snmp -I -smux,mteTrigger,mteTriggerConf -p /run/snmpd.pid'`
+```
+SNMPDOPTS='-LS0-5d -Lf /dev/null -u snmp -g snmp -I -smux,mteTrigger,mteTriggerConf -p /run/snmpd.pid'
+```
 
 ```bash
 service snmpd restart
@@ -107,23 +110,30 @@ snmpwalk -v1 -c public 192.168.0.1
 ```bash
 rvim /etc/apt/apt.conf.d/50unattended-upgrades
 ```
-`Unattended-Upgrade::Mail "******@*****";
+
+```
+Unattended-Upgrade::Mail "******@*****";
 Unattended-Upgrade::Remove-Unused-Dependencies "true";
-Unattended-Upgrade::Automatic-Reboot "true";`
+Unattended-Upgrade::Automatic-Reboot "true";
+```
 
 ### email config
 ```bash 
 apt install mutt
 ```
 
-`Internet with smarthost:
-accept defaults #(assumes smtp.mydomain is set correctly.)`
+```
+Internet with smarthost:
+accept defaults #(assumes smtp.mydomain is set correctly.)
+```
 
 ```bash 
 rvim /etc/aliases
 ```
 
-`root: yourname`
+```
+root: yourname
+```
 
 ```bash 
 postaliases
@@ -132,6 +142,57 @@ postaliases
 ### Maintenance
 ```bash
 apt update && apt dist-upgrade && apt autoremove && apt autoclean && apt clean && checkrestart && if [ -f /var/run/reboot-required ]; then echo "REBOOT REQUIRED"; else echo "REBOOT NOT REQUIRED" ;fi
+```
+
+# Application specific amendments
+
+## MySQL listening on network
+(default is listen on loopback)
+### Install Server, edit config and adjust users.
+
+```bash
+apt install mysql-server
+rvim /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+```
+bind-address            = 0.0.0.0
+```
+
+```bash
+service mysql restart
+mysql -u root -p
+```
+
+```mysql
+CREATE USER 'root'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
+
+## PostgreSQL listening on network
+(default is listen on loopback)
+
+```bash
+tasksel install postgresql-server
+rvim /etc/postgresql/9.5/main/postgresql.conf
+```
+
+```
+listen_addresses = '*'                  # (change requires restart)
+```
+
+```bash
+service postgresql restart
+```
+
+## LAP Server
+**(LAMP minus MySQL server, add MySQL and PostgreSQL clients instead.)***
+(can't use tasksel install lamp-server for this)
+
+```bash
+apt install apache2 apache2-doc apache2-suexec-custom libapache2-mod-php php-cli php-mcrypt php-mysql php-pgsql dbconfig-mysql dbconfig-pgsql
+service apache2 restart
 ```
 
 ```markdown
