@@ -64,7 +64,8 @@ apt install ntp
 rvim /etc/ntp.conf && service ntp restart
 ```
 
-```# Specify one or more NTP servers.
+```
+# Specify one or more NTP servers.
 server time.hardknocks.school.nz iburst
 ```
 
