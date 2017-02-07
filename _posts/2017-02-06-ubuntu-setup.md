@@ -226,9 +226,9 @@ service postgresql restart
 **More work needed here**
 
 
-## LA--M--P Server.
-**(LAMP minus MySQL server, add MySQL and PostgreSQL clients instead.)***
-(Can't use tasksel install lamp-server for this.)
+## LAP Server.
+**LAMP minus MySQL server, add MySQL and PostgreSQL clients instead since MySQL is running elsewhere.**
+(Could use tasksel install lamp-server for this then try to prune MySQL back out afterwards.)
 
 ```bash
 apt install apache2 apache2-doc apache2-suexec-custom libapache2-mod-php php-cli php-mcrypt php-mysql php-pgsql dbconfig-mysql dbconfig-pgsql
