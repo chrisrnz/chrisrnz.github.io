@@ -57,7 +57,7 @@ date: 2017-03-22
 /secure set kiwicon_sosdla_key xxxxxxxx
 
 /server add kiwicon li.kiwicon.org/6697 -ssl -autoconnect
-/set irc.server.kiwicon.autojoin "#newglobal,#triumvirate,#sosdla,#kiwicon,#isig" "${sec.data.kiwicon_newglobal_key},${sec.data.kiwicon_triumvirate_key},${sec.data.kiwicon_sosdla_key}"
+/set irc.server.kiwicon.autojoin = "#newglobal,#triumvirate,#sosdla,#kiwicon,#isig ${sec.data.kiwicon_newglobal_key},${sec.data.kiwicon_triumvirate_key},${sec.data.kiwicon_sosdla_key}"
 /set irc.server.kiwicon.autorejoin on
 /set irc.server.kiwicon.msg_part "bye"
 /set irc.server.kiwicon.msg_quit "bye"
