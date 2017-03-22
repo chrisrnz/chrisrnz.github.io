@@ -5,7 +5,7 @@ published: false
 date: 2017-03-22
 ---
 
-
+```
 /secure passphrase this xxxxxxxx is xxxxxxxx my xxxxxxxx secret xxxxxxxx passphrase
 
 /script install buffers.pl buffer_autoclose.py iset.pl screen_away.py
@@ -65,3 +65,4 @@ date: 2017-03-22
 /set irc.server.kiwicon.ssl_verify off
 /set irc.server.kiwicon.realname "Chris"
 /set irc.server.kiwicon.username "cjr"
+```
